@@ -10,6 +10,7 @@ class app{
     //this.recognising.train(trainData);
     this.getCaptcha();
   }
+  
   async getCaptcha(){
     let buffer = await this.imageSlicer.imageFilter("./CodeImage.jpg");
     let buffers = await this.imageSlicer.imageSlice(buffer);
